@@ -1,0 +1,27 @@
+{
+  "name": "movie-stub",
+  "version": "1.0.0",
+  "description": "built from http://thejackalofjavascript.com/angularjs-hands-on-tutorial/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prahaladbelavadi/angular-project.git"
+  },
+  "keywords": [
+    "angular",
+    "js"
+  ],
+  "author": "Prahalad Belavadi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prahaladbelavadi/angular-project/issues"
+  },
+  "homepage": "https://github.com/prahaladbelavadi/angular-project#readme",
+  "devDependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}

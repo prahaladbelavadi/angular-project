@@ -1,0 +1,22 @@
+{
+  "name": "movieStub",
+  "version": "0.0.1",
+  "authors": [
+    "Prhalad Belavadi"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/prahaladbelavadi/angular-project",
+  "description": "tutorial from http://thejackalofjavascript.com/angularjs-hands-on-tutorial/",
+  "main": "",
+  "devDependencies": {
+    "angular": "^1.6.3",
+    "bootstrap": "^3.3.7"
+  }
+}
