@@ -45,10 +45,19 @@
     <h4>Book Movie Tickets Online</h4>
 <hr>
     <h4>Movies Screening :</h4>
+
     <ul>
-        <li data-ng-repeat='movie in movies'>
-        	{{movie.id}} - {{movie.name}} - {{movie.rating}}
+        <li data-ng-repeat='movie in movies | orderBy: "name":true'>
+        	{{movie.id}} - {{movie.name | uppercase}} - {{movie.rating}}
         </li>
     </ul>
+
+    <pre>
+        {{ movies | json }}
+    </pre>
+
+<hr>
+
+
 </body>
 </html>
