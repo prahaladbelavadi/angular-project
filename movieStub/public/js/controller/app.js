@@ -27,7 +27,7 @@ movieStubApp.controller("movieStubController", function ($scope) {
             "thumb": "http://upload.wikimedia.org/wikipedia/en/6/66/Transformers07.jpg"
         }
     ];
-
+    $scope.headerSrc = 'tmpl/header.html';
     $scope.currMovie = null;
     $scope.getMovieById = function (id) {
         var movies = $scope.movies;
