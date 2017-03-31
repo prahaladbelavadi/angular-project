@@ -3,61 +3,39 @@
 <head>
 	<title>Movie Stub - Book Movie Tickets Online</title>
 	<link
-        rel="stylesheet"
-        type="text/css"
-        href="css/bootstrap.min.css">
+		rel="stylesheet"
+		type="text/css"
+		href="css/bootstrap.min.css">
 	<link
-        rel="stylesheet"
-        type="text/css"
-        href="css/bootstrap-theme.min.css">
+		rel="stylesheet"
+		type="text/css"
+		href="css/bootstrap-theme.min.css">
 	<script
-        type="text/javascript"
-        src="js/lib/angular.min.js">
-    </script>
+		type="text/javascript"
+		src="js/lib/angular.min.js"></script>
 	<script
-        type="text/javascript"
-        src="js/lib/jquery.min.js">
-    </script>
+		type="text/javascript"
+		src="js/lib/angular-route.min.js"></script>
 	<script
-        type="text/javascript"        src="js/lib/bootstrap.min.js">
-    </script>
-    <script
-        type="text/javascript"
-        src="js/controller/app.js">
-
-    </script>
+		type="text/javascript"
+		src="js/lib/jquery.min.js"></script>
+	<script
+		type="text/javascript"
+		src="js/lib/bootstrap.min.js"></script>
+	<script
+		type="text/javascript"
+		src="js/controller/app.js"></script>
+	<script
+		type="text/javascript"
+		src="js/router/router.js"></script>
 </head>
-<body class="container"data-ng-controller="movieStubController">
-	<div
-		data-ng-include
-		src="headerSrc">
-	</div>
+<body class="container" 	data-ng-controller="movieStubController">
+
+	<div data-ng-include src="headerSrc"></div>
+
 <hr>
-	<div class="row">
-		<div class="col-xs-3">
-			<h4>
-				Tickets available for:
-			</h4>
-		</div>
-		<div class="col-xs-3">
-			<input class="form-control"
-			type="text"
-			placeholder="Search a movie" data-ng-model="search">
-		</div>
-	</div>
-	<ul>
-		<li data-ng-repeat="movie in movies | 			orderBy:'name':true | filter:search">
-			{{movie.name | uppercase}}
-			<a href="javascript:" 					data-ng-click="getMovieById(movie.id)">
-				Availability
-			</a>
-		</li>
-	</ul>
-<br/>
-	<label
-	data-ng-show="currMovie">
-		Availabilty for
-		{{currMovie.name}} is {{currMovie.availability}}
-	</label>
+
+	<div data-ng-view=""></div>
+
 </body>
 </html>
